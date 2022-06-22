@@ -1,9 +1,0 @@
-Comenzar servidor = "npm start"
-
-Pausar servidor angular cli = "CTRL + C"
-
-Crear componente con CLI = "ng g c prueba-componentes/generado-cli"
-
-
-
-
