@@ -12,3 +12,18 @@ background: linear-gradient(0deg, rgba(6,223,232,1) 87%, rgba(34,151,195,1) 100%
   .fs-1{
     padding: 1%;
   }
+
+  .red{
+    color:red;
+  }
+
+  ol.normal {
+    list-style-type: none;
+  }
+  .green{
+    color:green
+  }
+  .black{
+    color:black;
+  }
+  

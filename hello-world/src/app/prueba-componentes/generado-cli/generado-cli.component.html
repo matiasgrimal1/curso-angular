@@ -1,3 +1,9 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
 <header>
   <!-- Comienzo Menu-->
   <nav class="navbar navbar-expand-lg nnavbar navbar-dark bg-primary">
@@ -58,4 +64,20 @@
   <!----Fin Menu -->
 </header>
 <p class="fs-1 text-center">ANGULAR</p>
-<img src="../../../assets/image/angular.jpg" class="img-fluid" alt="..." />
+<img src="../../../assets/image/angularlogo.jpg" class="img-fluid" alt="..." />
+
+<h2 class="text-center p-5">Listado de Alumnos</h2>
+<ol class="text-center normal fs-2 animate__animated animate__bounceInDown">
+  <li class="text-center" [ngClass]="color">
+    {{ alumno.nombre }}
+  </li>
+  <li *ngFor="let alumno2 of ['Pedro', 'Juana', 'Lisa']" [ngClass]="colorgreen">
+    {{ alumno2 }}
+  </li>
+  <li
+    *ngFor="let alumno3 of ['Carla', 'Carlos', 'José']"
+    [ngClass]="colorblack"
+  >
+    {{ alumno3 }}
+  </li>
+</ol>
