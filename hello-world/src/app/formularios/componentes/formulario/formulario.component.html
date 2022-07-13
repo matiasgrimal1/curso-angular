@@ -76,29 +76,40 @@
 
 <!---Aplicacion FORMULARIO-->
 <br /><br /><br />
-<form
-  class="text-center fs-4 text animate__animated animate__fadeIn"
-  [formGroup]="formulario"
-  (ngSubmit)="submit($event)"
-  [ngClass]="formulario.invalid ? 'form-error' : 'form'"
->
-  Nombre:
-  <input
-    type="text"
-    formControlName="nombre"
-    required
-    placeholder="Ingrese su nombre"
-  />
-  Edad:
-  <input formControlName="edad" type="number" placeholder="Ingrese su edad" />
-  Email:
-  <input formControlName="email" type="email=" placeholder="Ingrese su Email" />
-  <br /><br /><br />
-  <button
-    type="submit"
-    class="btn btn-dark animate__animated animate__bounceInUp"
-    [disabled]="formulario.invalid"
+<mat-card class="card1 mat-elevation-z10">
+  <form
+    class="form1 text-center fs-4 text animate__animated animate__fadeIn"
+    [formGroup]="formulario"
+    (ngSubmit)="submit($event)"
+    [ngClass]="formulario.invalid ? 'form-error' : 'form'"
   >
-    Confirmar
-  </button>
-</form>
+    Nombre:
+    <input
+      type="text"
+      formControlName="nombre"
+      required
+      placeholder="Ingrese su nombre"
+    />
+    Edad:
+    <input formControlName="edad" type="number" placeholder="Ingrese su edad" />
+    Email:
+    <input
+      formControlName="email"
+      type="email="
+      placeholder="Ingrese su Email"
+    />
+    <br /><br />
+    <mat-icon aria-hidden="false" aria-label="Example home icon"
+      >check</mat-icon
+    >
+    <button
+      mat-raised-button
+      color="primary"
+      class="animate__animated animate__bounceInUp"
+      [disabled]="formulario.invalid"
+      type="submit"
+    >
+      Confirmar
+    </button>
+  </form>
+</mat-card>

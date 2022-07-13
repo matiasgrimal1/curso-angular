@@ -15,3 +15,15 @@ body{
     .form{
         color: green;
     }
+    .card1{
+    height: 21%;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
+    background: linear-gradient(0deg, rgba(6,223,232,1) 87%, rgba(34,151,195,1) 100%);
+    }
+    .form1{
+      padding: 2%;
+    }
+
+

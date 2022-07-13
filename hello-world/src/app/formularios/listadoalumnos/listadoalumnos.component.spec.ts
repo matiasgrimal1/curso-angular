@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeneradoCliComponent } from './generado-cli.component';
+import { ListadoalumnosComponent } from './listadoalumnos.component';
 
-describe('GeneradoCliComponent', () => {
-  let component: GeneradoCliComponent;
-  let fixture: ComponentFixture<GeneradoCliComponent>;
+describe('ListadoalumnosComponent', () => {
+  let component: ListadoalumnosComponent;
+  let fixture: ComponentFixture<ListadoalumnosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GeneradoCliComponent ]
+      declarations: [ ListadoalumnosComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GeneradoCliComponent);
+    fixture = TestBed.createComponent(ListadoalumnosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

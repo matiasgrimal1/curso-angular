@@ -1,0 +1,11 @@
+table{
+    width: 70%;
+    background-color: skyblue;
+    margin: 0% auto;
+}
+
+.mattabla{
+    
+    background: rgb(6,223,232);
+    background: linear-gradient(0deg, rgba(6,223,232,1) 87%, rgba(34,151,195,1) 100%);
+}
