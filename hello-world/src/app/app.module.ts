@@ -10,6 +10,8 @@ import { ConversorPipe } from './formularios/pipes/conversor.pipe';
 import { MiPropiaDirective } from './formularios/directivas/mi-propia.directive';
 import { ListadoalumnosComponent } from './formularios/listadoalumnos/listadoalumnos.component';
 import { ObservablesComponent } from './formularios/observables/observables.component';
+import { Menu2Component } from './menu2/menu2/menu2.component';
+import { RoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [
@@ -19,15 +21,16 @@ import { ObservablesComponent } from './formularios/observables/observables.comp
     ConversorPipe,
     MiPropiaDirective,
     ListadoalumnosComponent,
-    ObservablesComponent
-
+    ObservablesComponent,
+    Menu2Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
