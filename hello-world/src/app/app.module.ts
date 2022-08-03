@@ -10,8 +10,9 @@ import { ConversorPipe } from './formularios/pipes/conversor.pipe';
 import { MiPropiaDirective } from './formularios/directivas/mi-propia.directive';
 import { ListadoalumnosComponent } from './formularios/listadoalumnos/listadoalumnos.component';
 import { ObservablesComponent } from './formularios/observables/observables.component';
-import { Menu2Component } from './menu2/menu2/menu2.component';
 import { RoutingModule } from './routing.module';
+import { AlumnosComponent } from './desaprobados/alumnos/alumnos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { RoutingModule } from './routing.module';
     MiPropiaDirective,
     ListadoalumnosComponent,
     ObservablesComponent,
-    Menu2Component
+    AlumnosComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,8 @@ import { RoutingModule } from './routing.module';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RoutingModule
+    RoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

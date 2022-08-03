@@ -1,0 +1,9 @@
+h3 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.listadodesaprobados {
+    color: red;
+}

@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, CanActivate } from '@angular/router';
+import { MiGuardaGuard } from './guardas/mi-guarda.guard';
 import { Menu2Component } from './menu2/menu2/menu2.component';
 
-
 const rutas: Routes = [
-  { path: 'menu2', component: Menu2Component }
+  {
+    path: 'menu2',
+    loadChildren: () => import('./contact-reactive/contact-reactive.module').then(m => m.ContactReactiveModule),
+    canActivate: [MiGuardaGuard]
+  },
 ]
 
 
