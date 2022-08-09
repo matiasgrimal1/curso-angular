@@ -9,11 +9,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class FormularioComponent implements OnInit {
 
   public formulario: FormGroup;
-  
 
   constructor(
     private fb: FormBuilder
-  ) { 
+  ) {
     this.formulario = fb.group({
       nombre: [null, [Validators.required]],
       edad: [null, [Validators.required, Validators.min(1)]],

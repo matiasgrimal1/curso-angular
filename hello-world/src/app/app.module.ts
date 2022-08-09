@@ -7,12 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modulos/material/material.module';
 import { ConversorPipe } from './formularios/pipes/conversor.pipe';
-import { MiPropiaDirective } from './formularios/directivas/mi-propia.directive';
 import { ListadoalumnosComponent } from './formularios/listadoalumnos/listadoalumnos.component';
 import { ObservablesComponent } from './formularios/observables/observables.component';
 import { RoutingModule } from './routing.module';
 import { AlumnosComponent } from './desaprobados/alumnos/alumnos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,6 @@ import { HttpClientModule } from '@angular/common/http';
     MiDirectivaDirective,
     FormularioComponent,
     ConversorPipe,
-    MiPropiaDirective,
     ListadoalumnosComponent,
     ObservablesComponent,
     AlumnosComponent
@@ -32,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     RoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
